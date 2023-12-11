@@ -41,7 +41,12 @@ Tehdään ensin käsin, sitten automatisoidaan.
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/09d4a0b6-adde-4d1e-b0ac-79e810e34e7d)
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/807a1f3c-3302-480b-a779-83527c8a5738)
+
 Taisin unohtaa pistää kansion /srv/salt/init.sls hakemistoon. Korjataan tämä.
 
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/81fdb02a-3e55-4f26-8803-79cbf516df19)
 
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/3730f14c-e784-4920-9392-c2cb1bdfa463)
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/b0b39497-8f10-45db-8ccd-dd8fecf78c1f)
 
