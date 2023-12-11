@@ -89,5 +89,7 @@ Yritin sitten implementoida tätä latausta Salttiin, mutta en millään onnistu
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/da893280-df63-44e0-b86f-0475ea08a309)
 
-Harmittaa toki :)
+Harmittaa toki :) 
+
+## Tulen varmaan jatkamaan projektia tämän jälkeen vielä. Keskeneräinen, mutta toivottavasti saan hoidettua.
 
