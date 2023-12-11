@@ -63,18 +63,6 @@ Yritin vielä moneen otteeseen testata eri tapoja ladata VSCodea.
 
 Lopulta päätin, että järkevintä on lähteä tekemään projektia ensin käsin. Katsoin ohjeet [virallisilta sivuilta](https://code.visualstudio.com/docs/setup/linux) ja lähdin lataamaan tätä Virtual Boxissa Debianilla.
 
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/0124eb8c-ed92-4d10-85e6-64eda3868773)
-
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/c27216e5-c4b9-4234-8602-5b9750a64c71)
-
-Ja tämä lataus meni ihan sulavasti.
-
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/86cb09ad-d59a-406f-8997-10fe5386bd19)
-
-Yritin sitten implementoida tätä latausta Salttiin, mutta en millään onnistunut. Tuijottelin ja yritin etsiä tietoa miten saisin sen toimimaan Saltissa. Monia eri erroreja tuli vastaan ja valitettavasti aikakin alkoi loppumaan.
-
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/da893280-df63-44e0-b86f-0475ea08a309)
-
 ```
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -88,6 +76,18 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
 ```
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/0124eb8c-ed92-4d10-85e6-64eda3868773)
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/c27216e5-c4b9-4234-8602-5b9750a64c71)
+
+Ja tämä lataus meni ihan sulavasti.
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/86cb09ad-d59a-406f-8997-10fe5386bd19)
+
+Yritin sitten implementoida tätä latausta Salttiin, mutta en millään onnistunut. Tuijottelin ja yritin etsiä tietoa miten saisin sen toimimaan Saltissa. Monia eri erroreja tuli vastaan ja valitettavasti aikakin alkoi loppumaan.
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/da893280-df63-44e0-b86f-0475ea08a309)
 
 Harmittaa toki :)
 
