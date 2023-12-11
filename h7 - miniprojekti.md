@@ -41,6 +41,8 @@ Onko yhteys luotu onnistuneesti?
 
 ## VSCoden sekä Python-laajennuksen asennus
 
+Seuraavaksi olisi tarkoituksena asettaa minioneille VSCode ja Python-laajennus.
+
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/09d4a0b6-adde-4d1e-b0ac-79e810e34e7d)
 
 Ajattelin lataa snapd:n avulla kun ajattelin, että se olisi helpompaa niin.
@@ -51,9 +53,41 @@ Ajattelin lataa snapd:n avulla kun ajattelin, että se olisi helpompaa niin.
 
 Taisin unohtaa pistää kansion /srv/salt/init.sls hakemistoon. Korjataan tämä. Olisin voinut sen siirtää, mutta loin vain uuden tekstitiedoston /srv/salt/:iin. Sitten ajetaan `sudo salt 's001' state.apply`
 
-Sain sitten vscoden ladattua, mutta en 
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/b0b39497-8f10-45db-8ccd-dd8fecf78c1f)
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/3730f14c-e784-4920-9392-c2cb1bdfa463)
 
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/b0b39497-8f10-45db-8ccd-dd8fecf78c1f)
+Sain kai sitten VSCoden ladattua, mutta en Python-laajennusta. En hahmota minkä takia.
+
+Yritin vielä moneen otteeseen testata eri tapoja ladata VSCodea. 
+
+Lopulta päätin, että järkevintä on lähteä tekemään projektia ensin käsin. Katsoin ohjeet [virallisilta sivuilta](https://code.visualstudio.com/docs/setup/linux) ja lähdin lataamaan tätä Virtual Boxissa Debianilla.
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/0124eb8c-ed92-4d10-85e6-64eda3868773)
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/c27216e5-c4b9-4234-8602-5b9750a64c71)
+
+Ja tämä lataus meni ihan sulavasti.
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/86cb09ad-d59a-406f-8997-10fe5386bd19)
+
+Yritin sitten implementoida tätä latausta Salttiin, mutta en millään onnistunut. Tuijottelin ja yritin etsiä tietoa miten saisin sen toimimaan Saltissa. Monia eri erroreja tuli vastaan ja valitettavasti aikakin alkoi loppumaan.
+
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/da893280-df63-44e0-b86f-0475ea08a309)
+
+```
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+```
+
+```
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
+```
+
+Harmittaa toki :)
 
