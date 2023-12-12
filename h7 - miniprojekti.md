@@ -23,14 +23,16 @@ Käynnistetään Vagrant ja luodaan siihen SSH-yhteys.
 
 `sudo apt-get install salt-master` ei heti toiminut, niin tajusin päivittää ensin ( `sudo apt-get update` & `sudo apt-get upgrade` ). Sitten laitoin masterin ja minionin (`sudo apt-get install salt-master` & `sudo apt-get install salt-minion`) lataukseen.
 
+`notepad Vagrantfile`: Muokataan seuraavaksi Vagrantfileä. Kopioin sinne valmiin [valmiin Vagrantfilen](https://terokarvinen.com/2023/salt-vagrant/)
 
-Muokataan seuraavaksi Vagrantfileä. `notepad Vagrantfile`
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/a0ace446-4a6b-4506-855b-27a900975fd3)
 
-![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/2c60da67-82a9-4b88-8ce5-cc2c28a27b13)
 
 `vagrant up` & `vagrant ssh master`:
 
-`sudo salt-key -A`:
+![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/2c60da67-82a9-4b88-8ce5-cc2c28a27b13)
+
+`sudo salt-key -A`, hyväksytään avaimet.
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/7ed5ca92-039a-4249-817e-5410161ecfef)
 
