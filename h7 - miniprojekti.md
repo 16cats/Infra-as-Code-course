@@ -47,7 +47,9 @@ Seuraavaksi olisi tarkoituksena asettaa minioneille VSCode ja Python-laajennus.
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/09d4a0b6-adde-4d1e-b0ac-79e810e34e7d)
 
-Ajattelin lataa snapd:n avulla kun ajattelin, että se olisi helpompaa niin.
+Ajattelin lataa snapd:n avulla kun ajattelin, että se olisi helpompaa niin. 
+
+(13.12.2023 note: Snap on pakettienhallinta, jota käytin ehkä joskus 3 vuotta sitten. En tosiaan suosittele käyttämään sitä henkilökohtasesti turvariskien takia, mutta ajattelin, että sitä olisi helppo käyttää semi-lyhkäsiin komentoihin.)
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/10615395-c17c-4387-bec3-da8da1e6bbe2)
 
@@ -60,6 +62,8 @@ Taisin unohtaa pistää kansion /srv/salt/init.sls hakemistoon. Korjataan tämä
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/3730f14c-e784-4920-9392-c2cb1bdfa463)
 
 Sain kai sitten VSCoden ladattua, mutta en Python-laajennusta. En hahmota minkä takia.
+
+(13.12.2023 note: en sittenkään usko, että onnistuin snapilla asentaa VSCodea, vaikka niin se ilmoittaa. Kokeilin tehdä sitä käsin jälkeenpäin, eikä mielestäni codea oltu asennettu, vaikka ilmoittaakin et jokin on ladattu.)
 
 Yritin vielä moneen otteeseen testata eri tapoja ladata VSCodea. 
 
@@ -91,7 +95,4 @@ Yritin sitten implementoida tätä latausta Salttiin, mutta en millään onnistu
 
 ![image](https://github.com/16cats/Infra-as-Code-course/assets/97065659/da893280-df63-44e0-b86f-0475ea08a309)
 
-Harmittaa toki :) 
-
-## Tulen varmaan jatkamaan projektia tämän jälkeen vielä. Keskeneräinen, mutta toivottavasti saan hoidettua.
-
+Harmittaa toki :) .
